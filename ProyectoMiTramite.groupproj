@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BCA49DCF-6EE9-47AF-96A7-B1DCB6B34927}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MiTramite.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MiTramite">
+        <MSBuild Projects="MiTramite.dproj"/>
+    </Target>
+    <Target Name="MiTramite:Clean">
+        <MSBuild Projects="MiTramite.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MiTramite:Make">
+        <MSBuild Projects="MiTramite.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MiTramite"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MiTramite:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MiTramite:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
