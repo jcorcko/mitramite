@@ -1,0 +1,3 @@
+git config --global user.name "jcorcko"
+git config --global user.email "juancarlosorcko78@gmail.com"
+git config --list

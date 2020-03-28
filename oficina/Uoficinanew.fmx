@@ -1,0 +1,433 @@
+object Foficinanew: TFoficinanew
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = None
+  Caption = 'MiTr'#225'mite - Registrar datos oficina'
+  ClientHeight = 420
+  ClientWidth = 680
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnKeyUp = FormKeyUp
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = xFF0F1F81
+    Size.Width = 680.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Rectangle2: TRectangle
+      Align = Left
+      Fill.Bitmap.Bitmap.PNG = {
+        89504E470D0A1A0A0000000D49484452000000AA0000003C0806000000F64921
+        DC000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        079549444154785EED9A4D72DB3614C7F1203A5197CE1192E9A24DB2B28EE02C
+        EA746B9FA0752627708E909C2063B92788B78DBBB08F10AFF2D145273E42B2AC
+        135140DFFF01A4408AA228C79695FAFD663422418A00C13FDE17651445511445
+        5114455114455114455114455114455114455114455114455114455114455901
+        287E2B17C0FFF970DDD8F1B131762334F843E3ED33FAF5ED99EC2B9746B35077
+        DD9EF1E35D936503F3923EC7D66FE3A95F3779FEC6506F6886F6456CAD8273C6
+        EE153FF84D333AFF6CB2FE8E39A0137FF4709755B01FCF5A0C47F7AE42387591
+        7A639ED9AD77CDF7B5C2E03E1CB9579668F3DC7CF9DCA7FE0EFDF2F6241EAEE0
+        8F1EF06DF2947A3FEC3D7EFF441A97848DDF3568C35076D7E4662F367C3BB97B
+        2ED7C4B5673136DB2252B0D65F37C40B660549459A9BF1192F86C1F72852C19A
+        6D88149B7D737BDDB9D59CF366A1FA3C888958A8BFFB209C6F01D720CB565160
+        B1CEA0670E79BD86D50C8BEA83E5A5ADB743DA7A47F50FAC989C0B881E359D73
+        D9D63415295B9693CC6503EEE3341EFEFE70E610F7814D58546B6778BB6B66DA
+        F58BFB359FE21E447B660ED6EEC5BDC5295D3EAC69A467EE5C4648E18E1EECF1
+        0D3C971D087586CBBA4C205416E6E58443DF19ABE5FA735375CD101862D68B82
+        F021152918B558D515E7A68AF4BA99B6A8224A0A56CA7876AD71DB9981F98316
+        7371BFF90D5E0A6FC24E722D6CCF4AA8D2FE87D45A95E86A51FD5F0F37392367
+        77CDDB31E9C16FBDF79B457C16A0270833E24E055C83CFDF20E310474FC5D945
+        1852C4AA6C79EF1AEB3F62BBE9BAE9988AB14FFA88F794E2FD0B63ED299FC7E1
+        5115F4E5ADDF1E9BF16E667AA51140FCDC33BD21391AB62DB0741E112E492353
+        99DF16E6595824C3DEF8F52FE6CB1EE2E0D82C9463243A6BBAB782698BEA7D71
+        A3A7414C3166B466F1AC9B72CEE085702DC49D60D2C7D26121DCF5473FBFC103
+        48458AF88C17E394D0453C7C3E44151EDAB448018EE103F718AA148B317E7D7F
+        7FD24703447B7CFC159F772C7172447EC70B02BF4B450AB02FD7B3FE13DF072F
+        B0E502A1FF7BF42387917E1FE3A88B149463E47B1B1DFDF471D638A7854AE583
+        084948CF162B6563A11000E7162EBF6776E47BAD1F8430E963E9B0385944E8DF
+        9DF2C3DF2992AE1FB6FEB9534FBCFCEBFB98C0B20405CB01CB59266AF1831258
+        B0A87C4DC1EF3B729D1776EEF3FD30AED0473A2EB93E5B5C1E87581B595C7C6D
+        88150B28FCCE9D368D0B6DB200010B41ACF802C03BA4D78BCD32C6B4BD6E4D31
+        362CA8549C323FB5FBC2076DC53865A1619CAFEF1706AEA429EB8F22F261D25F
+        123F3CB86DC02EF969076B08979FBA79B90636A3F8CB3EAE079EE813DAFA3068
+        733562A960C5189CCF62BC8307D2548682C0C343FD30C0C44BF65C0929DAC103
+        2ACA5CE8A33E2E8405F4F8FD0E3FC4D037D1766E3941E5051404FAA1B13C86B6
+        BEEB0F0AB12EADF464C7C7E5FD6381F1DCC9FC34CC37DA700C8642C42C8DB45D
+        176B55A822B082282E10E2C920DC71074B31091362F810A1780D50E96BB9585F
+        7A8946E07E520BC7E279D43589C2C4A7E2E84AE632F4D19E03C4721D88D6E745
+        934053B088FAFE96C4C78B2C9E8B0277CF3D8567CB22C502EB3A77B8978A5893
+        10AA2A549BD44C7BB578CD99F870ED666B08108E858196BF89B8D2A2A2E76B11
+        AA58D379B555878429D615BD8DDEA43B220ED3EFFE3B3CD0796362F0C0C5F216
+        24C26DC3D3A4142849DE15828409DFB250E7188426C2C22B42A8F10CA17A0AC1
+        2E929E7A9D1319BF376162463C98A61040DA12975FAF1260BF4CA8AEAD443557
+        10E7F455162C5B22887A21CB58E2F0F2A21B2CA4764B9A9099F05C20D8AE63E3
+        40F062F7B0205804454C2ADF48E224B95CECC3B28C468C439BB8B0AA4225132C
+        EADAADE6893BA067F20200AF37C70DD9691116E09C59E5A7B57E104AD1D79241
+        19246EAE0C8B8CC9F9203AB6F42B771F57422F18B4AA5047E7C1CA79DBB2C2B3
+        C29C6F9B5D5F9AE6E0F2E37B7A9FEDC877133E8614455F2B082C29BE615991C1
+        4AE3A258FC6FA1334BB178570DC2973236E7F8B99EE15FE8136BE313A122B981
+        A504D4E21E0FE8C478178AD7A3735401D6C5E5231C00080FDA5E0C900F3782BE
+        AE31A16AC55A71DBE2BE16283315C05DE5269F1DC7FF8FB96D6E8B27E545BE7B
+        99F1F044A83689195D929D37917182518400F85714C2006CCBFF02383C68C3B1
+        D00BD23E570864EEC8F6C30E6DC7227BA7B1A25699DBFC58B2F21B08DE822119
+        C222C73C2C5ABB45ED1A2F09503D48BDD944A83EC9C2E7BD2A45A245592C23C8
+        BFA2A29B2BC382D9AC25D63AED73C5403DB310AB9475ACFF88DA6A28BF548188
+        6562E31BACB22E7A039104CFF538F473A7B184768C855E175E01DAE4180B5412
+        292279CD4ABEEA6D2742A5D2BAB58BB46048708F93CC162E1F61C13C423521F4
+        416E65850AE48D0BD14E213AD456F1B6652A4B8DAF30F90CB91FD4025117C5F6
+        4D04B1AABCFC882F28B0D0657E1AAA00689363F1E58ACC35DE60D5EAAF13A18E
+        CE632254D4B03AD0334FA4DC04979FC5D2553782B5197D5D69A10284016B5B7F
+        DFE3C97B0401CEB29438860F12807945F89B028B4DE6A3989BD83C8DF78772DC
+        D100738D398F4714455114455114455114455114455114455114455114455114
+        4551144551144551144551144551144551146526C6FC078159300D5E9D7C7A00
+        00000049454E44AE426082}
+      Fill.Bitmap.WrapMode = Tile
+      Fill.Kind = Bitmap
+      Margins.Left = 5.000000000000000000
+      Position.X = 65.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object Label2: TLabel
+      Align = Right
+      AutoSize = True
+      StyledSettings = []
+      Margins.Right = 5.000000000000000000
+      Position.X = 502.000000000000000000
+      Size.Width = 173.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Century Gothic'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Trailing
+      TextSettings.WordWrap = False
+      Text = 'Registrar datos oficina'
+      TabOrder = 0
+    end
+    object SpeedButton2: TSpeedButton
+      Align = Left
+      StyledSettings = [Size, Style]
+      Size.Width = 60.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'replytoolbutton'
+      Text = 'Volver'
+      TextSettings.Font.Family = 'Century Gothic'
+      TextSettings.FontColor = claWhitesmoke
+      OnClick = SpeedButton2Click
+    end
+  end
+  object ToolBar2: TToolBar
+    Align = Bottom
+    Padding.Top = 4.000000000000000000
+    Padding.Right = 3.000000000000000000
+    Padding.Bottom = 3.000000000000000000
+    Position.Y = 380.000000000000000000
+    Size.Width = 680.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Button1: TButton
+      Align = Right
+      StyledSettings = [Size, Style, FontColor]
+      Position.X = 557.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Guardar'
+      TextSettings.Font.Family = 'Century Gothic'
+      OnClick = Button1Click
+    end
+  end
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 680.000000000000000000
+    Size.Height = 250.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 788
+    object Rectangle4: TRectangle
+      Fill.Color = xFF0F1F81
+      Position.X = 16.000000000000000000
+      Position.Y = 47.000000000000000000
+      Size.Width = 174.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      object Label3: TLabel
+        Align = Right
+        AutoSize = True
+        StyledSettings = [Size, Style]
+        Margins.Right = 5.000000000000000000
+        Position.X = 39.000000000000000000
+        Size.Width = 130.000000000000000000
+        Size.Height = 70.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Century Gothic'
+        TextSettings.FontColor = claWhitesmoke
+        TextSettings.HorzAlign = Trailing
+        Text = 'Nombre oficina:'
+        TabOrder = 0
+      end
+    end
+    object Line1: TLine
+      Align = Bottom
+      LineType = Bottom
+      Position.Y = 240.000000000000000000
+      Size.Width = 680.000000000000000000
+      Size.Height = 10.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF0F1F81
+      Stroke.Thickness = 3.000000000000000000
+    end
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      CharCase = ecUpperCase
+      DataDetectorTypes = []
+      TextSettings.WordWrap = True
+      Position.X = 189.000000000000000000
+      Position.Y = 47.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Viewport.Width = 150.000000000000000000
+      Viewport.Height = 70.000000000000000000
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 189.000000000000000000
+      Position.Y = 23.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      CharCase = ecUpperCase
+    end
+    object Rectangle3: TRectangle
+      Fill.Color = xFF0F1F81
+      Position.X = 16.000000000000000000
+      Position.Y = 23.000000000000000000
+      Size.Width = 174.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      object Label1: TLabel
+        Align = Right
+        AutoSize = True
+        StyledSettings = [Size, Style]
+        Margins.Right = 5.000000000000000000
+        Position.X = 39.000000000000000000
+        Size.Width = 130.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Century Gothic'
+        TextSettings.FontColor = claWhitesmoke
+        TextSettings.HorzAlign = Trailing
+        Text = 'C'#243'digo oficina:'
+        TabOrder = 0
+      end
+    end
+    object Panel1: TPanel
+      Position.X = 344.000000000000000000
+      Position.Y = 119.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 17
+    end
+    object Edit2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Position.X = 189.000000000000000000
+      Position.Y = 119.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      CharCase = ecUpperCase
+      OnChangeTracking = Edit2ChangeTracking
+      OnKeyUp = Edit2KeyUp
+      object EditButton1: TEditButton
+        CanFocus = False
+        Cursor = crArrow
+        TextSettings.Font.Family = 'Century Gothic'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Font.Family = 'Century Gothic'
+        Font.Size = 14.000000000000000000
+        Font.StyleExt = {00070000000000000004000000}
+        Size.Width = 28.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = '+'
+        OnClick = EditButton1Click
+      end
+    end
+    object Rectangle5: TRectangle
+      Fill.Color = xFF0F1F81
+      Position.X = 16.000000000000000000
+      Position.Y = 119.000000000000000000
+      Size.Width = 174.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      object Label4: TLabel
+        Align = Right
+        AutoSize = True
+        StyledSettings = [Size, Style]
+        Margins.Right = 5.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Century Gothic'
+        TextSettings.FontColor = claWhitesmoke
+        TextSettings.HorzAlign = Trailing
+        Text = 'C'#243'digo unidad:'
+        TabOrder = 0
+      end
+    end
+    object Label7: TLabel
+      Position.X = 352.000000000000000000
+      Position.Y = 121.000000000000000000
+      Size.Width = 305.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 15
+    end
+    object Panel2: TPanel
+      Position.X = 344.000000000000000000
+      Position.Y = 143.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 16
+    end
+    object Edit3: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 189.000000000000000000
+      Position.Y = 143.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      CharCase = ecUpperCase
+      OnChangeTracking = Edit3ChangeTracking
+      OnKeyUp = Edit2KeyUp
+      object EditButton2: TEditButton
+        CanFocus = False
+        Cursor = crArrow
+        TextSettings.Font.Family = 'Century Gothic'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Font.Family = 'Century Gothic'
+        Font.Size = 14.000000000000000000
+        Font.StyleExt = {00070000000000000004000000}
+        Size.Width = 28.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = '+'
+        OnClick = EditButton2Click
+      end
+    end
+    object Rectangle6: TRectangle
+      Fill.Color = xFF0F1F81
+      Position.X = 16.000000000000000000
+      Position.Y = 143.000000000000000000
+      Size.Width = 174.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      object Label5: TLabel
+        Align = Right
+        AutoSize = True
+        StyledSettings = [Size, Style]
+        Margins.Right = 5.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Century Gothic'
+        TextSettings.FontColor = claWhitesmoke
+        TextSettings.HorzAlign = Trailing
+        Text = 'Carnet responsable oficina:'
+        TabOrder = 0
+      end
+    end
+    object Label6: TLabel
+      Position.X = 352.000000000000000000
+      Position.Y = 145.000000000000000000
+      Size.Width = 305.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 14
+    end
+  end
+  object Layout6: TLayout
+    Align = Top
+    Position.Y = 60.000000000000000000
+    Size.Width = 680.000000000000000000
+    Size.Height = 70.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    object RectMessage: TRectangle
+      Align = Client
+      Fill.Color = claRed
+      Opacity = 0.000000000000000000
+      Size.Width = 680.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Text1: TText
+        Align = Client
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 610.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Mensaje de sistema'
+        TextSettings.Font.Family = 'Century Gothic'
+        TextSettings.FontColor = claWhitesmoke
+        TextSettings.HorzAlign = Leading
+        TextSettings.VertAlign = Leading
+      end
+      object FadeTransitionEffect1: TFadeTransitionEffect
+        Enabled = False
+        Progress = 30.000000000000000000
+        object FloatAnimation1: TFloatAnimation
+          AnimationType = InOut
+          Enabled = True
+          Duration = 5.000000000000000000
+          Inverse = True
+          Loop = True
+          StartValue = 0.000000000000000000
+          StopValue = 100.000000000000000000
+          Trigger = 'IsMouseOver=true'
+          TriggerInverse = 'IsMouseOver=false'
+        end
+      end
+      object SpeedButton12: TSpeedButton
+        Align = Right
+        Margins.Left = 15.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Position.X = 635.000000000000000000
+        Position.Y = 20.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'cleareditbutton'
+        Text = 'SpeedButton12'
+        OnClick = SpeedButton12Click
+      end
+    end
+  end
+end

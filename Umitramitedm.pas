@@ -27,6 +27,22 @@ type
     qListarItems: TFDQuery;
     cargos: TFDTable;
     qListarCargos: TFDQuery;
+    qListarFuncionarios: TFDQuery;
+    qListarItemsAcefalos: TFDQuery;
+    qListarEstados: TFDQuery;
+    qListarUnidades: TFDQuery;
+    qListarOficinas: TFDQuery;
+    qListarTramites: TFDQuery;
+    requisitos: TFDTable;
+    qListarRequisitos: TFDQuery;
+    qVerRequisitos: TFDQuery;
+    dsqListarTramites: TDataSource;
+    requisitos_tramites: TFDTable;
+    qSeleccionarRequisitos: TFDQuery;
+    qSeleccionarRequisitosid: TFDAutoIncField;
+    qSeleccionarRequisitosrequisito: TStringField;
+    qSeleccionarRequisitosseleccionar: TStringField;
+    qListarDocumentos: TFDQuery;
   private
     { Private declarations }
   public

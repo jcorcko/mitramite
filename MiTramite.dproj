@@ -350,8 +350,67 @@
             <Form>Fcargoedit</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="funcionario\Ufuncionarionew.pas">
+            <Form>Ffuncionarionew</Form>
+        </DCCReference>
+        <DCCReference Include="funcionario\Ufuncionarioedit.pas">
+            <Form>Ffuncionarioedit</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="estado\Uestadonew.pas">
+            <Form>Festadonew</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <DCCReference Include="cargo\Ucargonew.pas">
             <Form>Fcargonew</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="estado\Uestadoedit.pas">
+            <Form>Festadoedit</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="unidad\Uunidadnew.pas">
+            <Form>Funidadnew</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="unidad\Uunidadedit.pas">
+            <Form>Funidadedit</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="oficina\Uoficinanew.pas">
+            <Form>Foficinanew</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="oficina\Uoficinaedit.pas">
+            <Form>Foficinaedit</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="tramite\Utramitenew.pas">
+            <Form>Ftramitenew</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="tramite\Utramiteedit.pas">
+            <Form>Ftramiteedit</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="requisito\Urequisitonew.pas">
+            <Form>Frequisitonew</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="requisito\Urequisitoedit.pas">
+            <Form>Frequisitoedit</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="requisito\Urequisitoview.pas">
+            <Form>Frequisitoview</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="requisito\Urequisitoadd.pas">
+            <Form>Frequisitoadd</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="Uprueba.pas">
+            <Form>Fpruebas</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

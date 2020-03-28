@@ -19,21 +19,10 @@ type
     Rectangle1: TRectangle;
     Rectangle2: TRectangle;
     Layout1: TLayout;
-    ToolBar1: TToolBar;
     SpeedButton1: TSpeedButton;
-    SpeedButton2: TSpeedButton;
     Label2: TLabel;
     StatusBar1: TStatusBar;
-    SpeedButton4: TSpeedButton;
     TabControl1: TTabControl;
-    SpeedButton3: TSpeedButton;
-    SpeedButton5: TSpeedButton;
-    SpeedButton6: TSpeedButton;
-    SpeedButton7: TSpeedButton;
-    SpeedButton8: TSpeedButton;
-    SpeedButton9: TSpeedButton;
-    SpeedButton10: TSpeedButton;
-    SpeedButton11: TSpeedButton;
     Rectangle9: TRectangle;
     SpeedButton13: TSpeedButton;
     RectMessage: TRectangle;
@@ -63,14 +52,14 @@ type
     Rectangle23: TRectangle;
     Label18: TLabel;
     Layout2: TLayout;
-    TabItem2: TTabItem;
-    TabItem3: TTabItem;
-    TabItem4: TTabItem;
-    TabItem5: TTabItem;
-    TabItem6: TTabItem;
-    TabItem7: TTabItem;
-    TabItem8: TTabItem;
-    TabItem9: TTabItem;
+    TabTipoTramites: TTabItem;
+    TabFlujoTramites: TTabItem;
+    TabOficinas: TTabItem;
+    TabUnidades: TTabItem;
+    TabPersonas: TTabItem;
+    TabEstados: TTabItem;
+    TabFuncionarios: TTabItem;
+    TabCargos: TTabItem;
     Layout3: TLayout;
     Layout4: TLayout;
     Rectangle3: TRectangle;
@@ -248,7 +237,7 @@ type
     SpeedButton65: TSpeedButton;
     SpeedButton66: TSpeedButton;
     SpeedButton67: TSpeedButton;
-    TabItem10: TTabItem;
+    TabItems: TTabItem;
     Layout39: TLayout;
     Layout40: TLayout;
     Rectangle67: TRectangle;
@@ -270,7 +259,6 @@ type
     SpeedButton71: TSpeedButton;
     SpeedButton72: TSpeedButton;
     SpeedButton73: TSpeedButton;
-    SpeedButton74: TSpeedButton;
     Edit22: TEdit;
     Label53: TLabel;
     Label52: TLabel;
@@ -304,7 +292,7 @@ type
     Rectangle79: TRectangle;
     FadeTransitionEffect1: TFadeTransitionEffect;
     FloatAnimation1: TFloatAnimation;
-    TabItem11: TTabItem;
+    TabUsuarios: TTabItem;
     Layout43: TLayout;
     Layout44: TLayout;
     Rectangle80: TRectangle;
@@ -333,8 +321,6 @@ type
     SpeedButton78: TSpeedButton;
     SpeedButton79: TSpeedButton;
     Rectangle88: TRectangle;
-    Rectangle87: TRectangle;
-    Rectangle89: TRectangle;
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
@@ -372,6 +358,64 @@ type
     LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource;
     BindSourceDB3: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource;
+    Overlay: TRectangle;
+    BindSourceDB4: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource;
+    BindSourceDB5: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB5: TLinkGridToDataSource;
+    BindSourceDB6: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB6: TLinkGridToDataSource;
+    BindSourceDB7: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB7: TLinkGridToDataSource;
+    BindSourceDB8: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB8: TLinkGridToDataSource;
+    TabRequisitos: TTabItem;
+    Layout47: TLayout;
+    Layout48: TLayout;
+    Rectangle90: TRectangle;
+    Edit29: TEdit;
+    Label61: TLabel;
+    Label63: TLabel;
+    Label64: TLabel;
+    Rectangle91: TRectangle;
+    SpeedButton85: TSpeedButton;
+    SpeedButton86: TSpeedButton;
+    Rectangle92: TRectangle;
+    Label65: TLabel;
+    VertScrollBox12: TVertScrollBox;
+    Grid12: TGrid;
+    Layout49: TLayout;
+    Rectangle93: TRectangle;
+    SpeedButton87: TSpeedButton;
+    Layout50: TLayout;
+    Rectangle94: TRectangle;
+    Rectangle95: TRectangle;
+    Rectangle96: TRectangle;
+    SpeedButton88: TSpeedButton;
+    SpeedButton89: TSpeedButton;
+    SpeedButton90: TSpeedButton;
+    HorzScrollBox1: THorzScrollBox;
+    ToolBar1: TToolBar;
+    SpeedButton2: TSpeedButton;
+    SpeedButton4: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    SpeedButton5: TSpeedButton;
+    SpeedButton6: TSpeedButton;
+    SpeedButton7: TSpeedButton;
+    SpeedButton8: TSpeedButton;
+    SpeedButton9: TSpeedButton;
+    SpeedButton10: TSpeedButton;
+    SpeedButton11: TSpeedButton;
+    SpeedButton74: TSpeedButton;
+    Rectangle89: TRectangle;
+    Rectangle87: TRectangle;
+    SpeedButton84: TSpeedButton;
+    BindSourceDB9: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB9: TLinkGridToDataSource;
+    Rectangle97: TRectangle;
+    SpeedButton91: TSpeedButton;
+    BindSourceDB10: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB10: TLinkGridToDataSource;
     function Ejecutar(Programa:String;Esperar:Boolean=True):Boolean;
     procedure SpeedButton1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -419,6 +463,43 @@ type
     procedure SpeedButton62Click(Sender: TObject);
     procedure SpeedButton63Click(Sender: TObject);
     procedure SpeedButton67Click(Sender: TObject);
+    procedure SpeedButton57Click(Sender: TObject);
+    procedure SpeedButton56Click(Sender: TObject);
+    procedure SpeedButton59Click(Sender: TObject);
+    procedure SpeedButton60Click(Sender: TObject);
+    procedure SpeedButton61Click(Sender: TObject);
+    procedure OverlayClick(Sender: TObject);
+    procedure SpeedButton53Click(Sender: TObject);
+    procedure SpeedButton51Click(Sender: TObject);
+    procedure SpeedButton50Click(Sender: TObject);
+    procedure SpeedButton54Click(Sender: TObject);
+    procedure SpeedButton55Click(Sender: TObject);
+    procedure SpeedButton41Click(Sender: TObject);
+    procedure SpeedButton38Click(Sender: TObject);
+    procedure SpeedButton39Click(Sender: TObject);
+    procedure SpeedButton43Click(Sender: TObject);
+    procedure SpeedButton42Click(Sender: TObject);
+    procedure SpeedButton35Click(Sender: TObject);
+    procedure SpeedButton36Click(Sender: TObject);
+    procedure SpeedButton33Click(Sender: TObject);
+    procedure SpeedButton32Click(Sender: TObject);
+    procedure SpeedButton37Click(Sender: TObject);
+    procedure SpeedButton19Click(Sender: TObject);
+    procedure SpeedButton18Click(Sender: TObject);
+    procedure SpeedButton21Click(Sender: TObject);
+    procedure SpeedButton22Click(Sender: TObject);
+    procedure SpeedButton23Click(Sender: TObject);
+    procedure SpeedButton84Click(Sender: TObject);
+    procedure SpeedButton84MouseEnter(Sender: TObject);
+    procedure SpeedButton84MouseLeave(Sender: TObject);
+    procedure SpeedButton88Click(Sender: TObject);
+    procedure SpeedButton86Click(Sender: TObject);
+    procedure SpeedButton85Click(Sender: TObject);
+    procedure SpeedButton89Click(Sender: TObject);
+    procedure SpeedButton90Click(Sender: TObject);
+    procedure SpeedButton91Click(Sender: TObject);
+    procedure SpeedButton26Click(Sender: TObject);
+    procedure SpeedButton25Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -433,7 +514,9 @@ implementation
 {$R *.fmx}
 
 uses Upersonanew, Umitramitedm, Upersonaedit, Uitemnew, Uitemedit, Ucargonew,
-  Ucargoedit;
+  Ucargoedit, Ufuncionarionew, Ufuncionarioedit, Uestadonew, Uestadoedit,
+  Uunidadnew, Uunidadedit, Uoficinanew, Uoficinaedit, Utramitenew, Utramiteedit,
+  Urequisitonew, Urequisitoedit, Uprueba, Urequisitoview;
 
 function TFmain.Ejecutar(Programa:String;Esperar:Boolean=True):Boolean;
 var ProcInfo:TProcessInformation;
@@ -472,13 +555,182 @@ begin
   mitramitedm.qListarPersonas.Open();
   mitramitedm.qListarItems.Close;
   mitramitedm.qListarItems.Open();
+  mitramitedm.qListarItemsAcefalos.Close;
+  mitramitedm.qListarItemsAcefalos.Open();
   mitramitedm.qListarCargos.Close;
   mitramitedm.qListarCargos.Open();
+  mitramitedm.qListarFuncionarios.Close;
+  mitramitedm.qListarFuncionarios.Open();
+  mitramitedm.qListarEstados.Close;
+  mitramitedm.qListarEstados.Open();
+  mitramitedm.qListarUnidades.Close;
+  mitramitedm.qListarUnidades.Open();
+  mitramitedm.qListarOficinas.Close;
+  mitramitedm.qListarOficinas.Open();
+  mitramitedm.qListarTramites.Close;
+  mitramitedm.qListarTramites.Open();
+  mitramitedm.qListarRequisitos.Close;
+  mitramitedm.qListarRequisitos.Open();
+  mitramitedm.qVerRequisitos.Close;
+  mitramitedm.qVerRequisitos.Open();
+end;
+
+procedure TFmain.OverlayClick(Sender: TObject);
+begin
+  Overlay.Visible := False;
+end;
+
+procedure TFmain.SpeedButton32Click(Sender: TObject);
+begin
+  Edit7.Text := '';
+  Edit8.Text := '';
+  SpeedButton33Click(Self);
+end;
+
+procedure TFmain.SpeedButton33Click(Sender: TObject);
+begin
+  mitramitedm.qListarOficinas.Close;
+  mitramitedm.qListarOficinas.ParamByName('cod').AsString := Edit7.Text;
+  mitramitedm.qListarOficinas.ParamByName('ofic').AsString := Edit8.Text;
+  mitramitedm.qListarOficinas.Open();
+  if mitramitedm.qListarOficinas.RecordCount < 1 then
+  begin
+    Text1.Text := 'No existen datos para mostrar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton35Click(Sender: TObject);
+begin
+  Overlay.Visible := True;
+  Foficinanew.Edit1.Text := '';
+  Foficinanew.Edit2.Text := '';
+  Foficinanew.Edit3.Text := '';
+  Foficinanew.Memo1.Text := '';
+  Foficinanew.RectMessage.Opacity := 0;
+  Foficinanew.Showmodal;
+  Overlay.Visible := False;
+  if Foficinanew.ModalResult=mrOK then
+  begin
+    Text1.Text := 'Los datos de registro fueron guardados correctamente.';
+    RectMessage.Fill.Color := $FF00CE68;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+    SpeedButton32Click(Self);
+  end
+  else
+  begin
+    Text1.Text := 'No se ha guardado ningún registro.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton36Click(Sender: TObject);
+begin
+  if mitramitedm.qListarOficinas.RecordCount>0 then
+  begin
+    TDialogService.MessageDialog('Está a punto de eliminar el registro seleccionado. Eliminar ahora?'#10#10'Una vez eliminado, no podrá recuperar los datos de este registro.', TMsgDlgType.mtWarning, [TMsgDlgBtn.mbYes, TMsgDlgBtn.mbNo], TMsgDlgBtn.mbYes, 0,
+    procedure(const AResult: TModalResult)
+    begin
+      if AResult = mrYES then
+      begin
+        if not mitramitedm.oficinas.Active then mitramitedm.oficinas.Active := True;
+        if mitramitedm.oficinas.Locate('id', mitramitedm.qListarOficinas.FieldByName('id').AsInteger, []) then
+        begin
+          mitramitedm.oficinas.Delete;
+          Text1.Text := 'Los datos del registro seleccionado fueron eliminados correctamente.';
+          RectMessage.Fill.Color := $FF00CE68;
+          RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+          RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+          SpeedButton32Click(Self);
+        end;
+      end
+      else
+      begin
+        Text1.Text := 'No se ha eliminado ningún registro.';
+        RectMessage.Fill.Color := TAlphaColorRec.Red;
+        RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+        RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+        Abort;
+      end;
+    end);
+  end
+  else
+  begin
+    Text1.Text := 'No existen datos para eliminar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton37Click(Sender: TObject);
+begin
+  if mitramitedm.qListarOficinas.RecordCount>0 then
+  begin
+    Overlay.Visible := True;
+    Foficinaedit.Edit1.Text := mitramitedm.qListarOficinas.FieldByName('codigo').AsString;
+    Foficinaedit.Memo1.Text := mitramitedm.qListarOficinas.FieldByName('oficina').AsString;
+    Foficinaedit.Edit2.Text := mitramitedm.qListarOficinas.FieldByName('unidad_codigo').AsString;
+    Foficinaedit.Edit3.Text := mitramitedm.qListarOficinas.FieldByName('carnet').AsString;
+    Foficinaedit.modificado := False;
+    Foficinaedit.RectMessage.Opacity := 0;
+    Foficinaedit.Showmodal;
+    Overlay.Visible := False;
+    if Foficinaedit.ModalResult=mrOK then
+    begin
+      Text1.Text := 'Los datos modificados fueron guardados correctamente.';
+      RectMessage.Fill.Color := $FF00CE68;
+      RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+      RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+      SpeedButton32Click(Self);
+    end
+    else
+    begin
+      Text1.Text := 'No se ha modificado ningún registro.';
+      RectMessage.Fill.Color := TAlphaColorRec.Red;
+      RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+      RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+    end;
+  end
+  else
+  begin
+    Text1.Text := 'No existen datos para modificar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton38Click(Sender: TObject);
+begin
+  Edit9.Text := '';
+  Edit10.Text := '';
+  SpeedButton39Click(Self);
+end;
+
+procedure TFmain.SpeedButton39Click(Sender: TObject);
+begin
+  mitramitedm.qListarUnidades.Close;
+  mitramitedm.qListarUnidades.ParamByName('cod').AsString := Edit9.Text;
+  mitramitedm.qListarUnidades.ParamByName('unid').AsString := Edit10.Text;
+  mitramitedm.qListarUnidades.Open();
+  if mitramitedm.qListarUnidades.RecordCount < 1 then
+  begin
+    Text1.Text := 'No existen datos para mostrar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
 end;
 
 procedure TFmain.SpeedButton3Click(Sender: TObject);
 begin
-  TabControl1.TabIndex := 1;
+  TabControl1.TabIndex := 2;
   if SpeedButton3.IsPressed then Rectangle87.Position.X := SpeedButton3.Position.X;
 end;
 
@@ -498,7 +750,7 @@ end;
 
 procedure TFmain.SpeedButton10Click(Sender: TObject);
 begin
-  TabControl1.TabIndex := 8;
+  TabControl1.TabIndex := 9;
   if SpeedButton10.IsPressed then Rectangle87.Position.X := SpeedButton10.Position.X;
 end;
 
@@ -513,7 +765,7 @@ end;
 
 procedure TFmain.SpeedButton11Click(Sender: TObject);
 begin
-  TabControl1.TabIndex := 9;
+  TabControl1.TabIndex := 10;
   if SpeedButton11.IsPressed then Rectangle87.Position.X := SpeedButton11.Position.X;
 end;
 
@@ -533,6 +785,7 @@ end;
 
 procedure TFmain.SpeedButton14Click(Sender: TObject);
 begin
+  Fpruebas.ShowModal;
   Text1.Text := 'Mensaje de éxito.';
   RectMessage.Fill.Color := $FF00CE68;
   RectMessage.AnimateFloat('Opacity', 1.0, 1, TAnimationType.In, TInterpolationType.Linear);
@@ -547,9 +800,135 @@ begin
   RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
 end;
 
+procedure TFmain.SpeedButton18Click(Sender: TObject);
+begin
+  Edit3.Text := '';
+  Edit4.Text := '';
+  SpeedButton19Click(Self);
+end;
+
+procedure TFmain.SpeedButton19Click(Sender: TObject);
+begin
+  mitramitedm.qListarTramites.Close;
+  mitramitedm.qListarTramites.ParamByName('cod').AsString := Edit3.Text;
+  mitramitedm.qListarTramites.ParamByName('tram').AsString := Edit4.Text;
+  mitramitedm.qListarTramites.Open();
+  if mitramitedm.qListarTramites.RecordCount < 1 then
+  begin
+    Text1.Text := 'No existen datos para mostrar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
 procedure TFmain.SpeedButton1Click(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TFmain.SpeedButton21Click(Sender: TObject);
+begin
+  Overlay.Visible := True;
+  Ftramitenew.Edit1.Text := '';
+  Ftramitenew.Edit2.Text := '';
+  Ftramitenew.Memo1.Text := '';
+  Ftramitenew.RectMessage.Opacity := 0;
+  Ftramitenew.Showmodal;
+  Overlay.Visible := False;
+  if Ftramitenew.ModalResult=mrOK then
+  begin
+    Text1.Text := 'Los datos de registro fueron guardados correctamente.';
+    RectMessage.Fill.Color := $FF00CE68;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+    SpeedButton18Click(Self);
+  end
+  else
+  begin
+    Text1.Text := 'No se ha guardado ningún registro.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton22Click(Sender: TObject);
+begin
+  if mitramitedm.qListarTramites.RecordCount>0 then
+  begin
+    TDialogService.MessageDialog('Está a punto de eliminar el registro seleccionado. Eliminar ahora?'#10#10'Una vez eliminado, no podrá recuperar los datos de este registro.', TMsgDlgType.mtWarning, [TMsgDlgBtn.mbYes, TMsgDlgBtn.mbNo], TMsgDlgBtn.mbYes, 0,
+    procedure(const AResult: TModalResult)
+    begin
+      if AResult = mrYES then
+      begin
+        if not mitramitedm.tramites.Active then mitramitedm.tramites.Active := True;
+        if mitramitedm.tramites.Locate('id', mitramitedm.qListarTramites.FieldByName('id').AsInteger, []) then
+        begin
+          mitramitedm.tramites.Delete;
+          Text1.Text := 'Los datos del registro seleccionado fueron eliminados correctamente.';
+          RectMessage.Fill.Color := $FF00CE68;
+          RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+          RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+          SpeedButton38Click(Self);
+        end;
+      end
+      else
+      begin
+        Text1.Text := 'No se ha eliminado ningún registro.';
+        RectMessage.Fill.Color := TAlphaColorRec.Red;
+        RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+        RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+        Abort;
+      end;
+    end);
+  end
+  else
+  begin
+    Text1.Text := 'No existen datos para eliminar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton23Click(Sender: TObject);
+begin
+  if mitramitedm.qListarTramites.RecordCount>0 then
+  begin
+    Overlay.Visible := True;
+    Ftramiteedit.Edit1.Text := mitramitedm.qListarTramites.FieldByName('codigo').AsString;
+    Ftramiteedit.Memo1.Text := mitramitedm.qListarTramites.FieldByName('tramite').AsString;
+    Ftramiteedit.Edit2.Text := mitramitedm.qListarTramites.FieldByName('oficina_codigo').AsString;
+    Ftramiteedit.ComboTrackBar1.Text := mitramitedm.qListarTramites.FieldByName('tiempo').AsString;
+    Ftramiteedit.ComboBox1.ItemIndex := mitramitedm.qListarTramites.FieldByName('unidad_tiempo').AsInteger-1;
+    Ftramiteedit.modificado := False;
+    Ftramiteedit.RectMessage.Opacity := 0;
+    Ftramiteedit.Showmodal;
+    Overlay.Visible := False;
+    if Ftramiteedit.ModalResult=mrOK then
+    begin
+      Text1.Text := 'Los datos modificados fueron guardados correctamente.';
+      RectMessage.Fill.Color := $FF00CE68;
+      RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+      RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+      SpeedButton18Click(Self);
+    end
+    else
+    begin
+      Text1.Text := 'No se ha modificado ningún registro.';
+      RectMessage.Fill.Color := TAlphaColorRec.Red;
+      RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+      RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+    end;
+  end
+  else
+  begin
+    Text1.Text := 'No existen datos para modificar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
 end;
 
 procedure TFmain.SpeedButton24Click(Sender: TObject);
@@ -559,6 +938,19 @@ begin
     RectMessage.AnimateFloat('Opacity', 1.0, 0, TAnimationType.In, TInterpolationType.Linear);
     RectMessage.AnimateFloat('Opacity', 0, 2, TAnimationType.Out, TInterpolationType.Linear);
   end;
+end;
+
+procedure TFmain.SpeedButton25Click(Sender: TObject);
+begin
+  Edit1.Text := '';
+  Edit2.Text := '';
+  SpeedButton26Click(Self);
+  showmessage('Hello');
+end;
+
+procedure TFmain.SpeedButton26Click(Sender: TObject);
+begin
+//
 end;
 
 procedure TFmain.SpeedButton2Click(Sender: TObject);
@@ -573,6 +965,108 @@ begin
   begin
     Rectangle89.Position.X := SpeedButton2.Position.X;
     Rectangle89.Visible := True;
+  end;
+end;
+
+procedure TFmain.SpeedButton41Click(Sender: TObject);
+begin
+  Overlay.Visible := True;
+  Funidadnew.Edit1.Text := '';
+  Funidadnew.Edit2.Text := '';
+  Funidadnew.Memo1.Text := '';
+  Funidadnew.RectMessage.Opacity := 0;
+  Funidadnew.Showmodal;
+  Overlay.Visible := False;
+  if Funidadnew.ModalResult=mrOK then
+  begin
+    Text1.Text := 'Los datos de registro fueron guardados correctamente.';
+    RectMessage.Fill.Color := $FF00CE68;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+    SpeedButton38Click(Self);
+  end
+  else
+  begin
+    Text1.Text := 'No se ha guardado ningún registro.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton42Click(Sender: TObject);
+begin
+  if mitramitedm.qListarUnidades.RecordCount>0 then
+  begin
+    TDialogService.MessageDialog('Está a punto de eliminar el registro seleccionado. Eliminar ahora?'#10#10'Una vez eliminado, no podrá recuperar los datos de este registro.', TMsgDlgType.mtWarning, [TMsgDlgBtn.mbYes, TMsgDlgBtn.mbNo], TMsgDlgBtn.mbYes, 0,
+    procedure(const AResult: TModalResult)
+    begin
+      if AResult = mrYES then
+      begin
+        if not mitramitedm.unidades.Active then mitramitedm.unidades.Active := True;
+        if mitramitedm.unidades.Locate('id', mitramitedm.qListarUnidades.FieldByName('id').AsInteger, []) then
+        begin
+          mitramitedm.unidades.Delete;
+          Text1.Text := 'Los datos del registro seleccionado fueron eliminados correctamente.';
+          RectMessage.Fill.Color := $FF00CE68;
+          RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+          RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+          SpeedButton38Click(Self);
+        end;
+      end
+      else
+      begin
+        Text1.Text := 'No se ha eliminado ningún registro.';
+        RectMessage.Fill.Color := TAlphaColorRec.Red;
+        RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+        RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+        Abort;
+      end;
+    end);
+  end
+  else
+  begin
+    Text1.Text := 'No existen datos para eliminar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton43Click(Sender: TObject);
+begin
+  if mitramitedm.qListarUnidades.RecordCount>0 then
+  begin
+    Overlay.Visible := True;
+    Funidadedit.Edit1.Text := mitramitedm.qListarUnidades.FieldByName('codigo').AsString;
+    Funidadedit.Memo1.Text := mitramitedm.qListarUnidades.FieldByName('unidad').AsString;
+    Funidadedit.Edit2.Text := mitramitedm.qListarUnidades.FieldByName('carnet').AsString;
+    Funidadedit.modificado := False;
+    Funidadedit.RectMessage.Opacity := 0;
+    Funidadedit.Showmodal;
+    Overlay.Visible := False;
+    if Funidadedit.ModalResult=mrOK then
+    begin
+      Text1.Text := 'Los datos modificados fueron guardados correctamente.';
+      RectMessage.Fill.Color := $FF00CE68;
+      RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+      RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+      SpeedButton38Click(Self);
+    end
+    else
+    begin
+      Text1.Text := 'No se ha modificado ningún registro.';
+      RectMessage.Fill.Color := TAlphaColorRec.Red;
+      RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+      RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+    end;
+  end
+  else
+  begin
+    Text1.Text := 'No existen datos para modificar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
   end;
 end;
 
@@ -604,6 +1098,7 @@ end;
 
 procedure TFmain.SpeedButton47Click(Sender: TObject);
 begin
+  Overlay.Visible := True;
   Fpersonanew.Edit1.Text := '';
   Fpersonanew.Edit2.Text := '';
   Fpersonanew.Edit3.Text := '';
@@ -616,6 +1111,7 @@ begin
   Fpersonanew.ComboBox1.ItemIndex := 0;
   Fpersonanew.RectMessage.Opacity := 0;
   Fpersonanew.Showmodal;
+  Overlay.Visible := False;
   if Fpersonanew.ModalResult=mrOK then
   begin
     Text1.Text := 'Los datos de registro fueron guardados correctamente.';
@@ -676,6 +1172,7 @@ procedure TFmain.SpeedButton49Click(Sender: TObject);
 begin
   if mitramitedm.qListarPersonas.RecordCount>0 then
   begin
+    Overlay.Visible := True;
     Fpersonaedit.Edit1.Text := mitramitedm.qListarPersonas.FieldByName('carnet').AsString;
     Fpersonaedit.Edit2.Text := mitramitedm.qListarPersonas.FieldByName('paterno').AsString;
     Fpersonaedit.Edit3.Text := mitramitedm.qListarPersonas.FieldByName('materno').AsString;
@@ -693,6 +1190,7 @@ begin
     Fpersonaedit.modificado := False;
     Fpersonaedit.RectMessage.Opacity := 0;
     Fpersonaedit.Showmodal;
+    Overlay.Visible := False;
     if Fpersonaedit.ModalResult=mrOK then
     begin
       Text1.Text := 'Los datos modificados fueron guardados correctamente.';
@@ -720,7 +1218,7 @@ end;
 
 procedure TFmain.SpeedButton4Click(Sender: TObject);
 begin
-  TabControl1.TabIndex := 2;
+  TabControl1.TabIndex := 1;
   if SpeedButton4.IsPressed then Rectangle87.Position.X := SpeedButton4.Position.X;
 end;
 
@@ -733,9 +1231,182 @@ begin
   end;
 end;
 
+procedure TFmain.SpeedButton50Click(Sender: TObject);
+begin
+  Edit13.Text := '';
+  SpeedButton51Click(Self);
+end;
+
+procedure TFmain.SpeedButton51Click(Sender: TObject);
+begin
+  mitramitedm.qListarEstados.Close;
+  mitramitedm.qListarEstados.ParamByName('std').AsString := Edit13.Text;
+  mitramitedm.qListarEstados.Open();
+  if mitramitedm.qListarEstados.RecordCount < 1 then
+  begin
+    Text1.Text := 'No existen datos para mostrar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton53Click(Sender: TObject);
+begin
+  Overlay.Visible := True;
+  Festadonew.Memo1.Text := '';
+  Festadonew.RectMessage.Opacity := 0;
+  Festadonew.Showmodal;
+  Overlay.Visible := False;
+  if Festadonew.ModalResult=mrOK then
+  begin
+    Text1.Text := 'Los datos de registro fueron guardados correctamente.';
+    RectMessage.Fill.Color := $FF00CE68;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+    SpeedButton50Click(Self);
+  end
+  else
+  begin
+    Text1.Text := 'No se ha guardado ningún registro.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton54Click(Sender: TObject);
+begin
+  if mitramitedm.qListarEstados.RecordCount>0 then
+  begin
+    TDialogService.MessageDialog('Está a punto de eliminar el registro seleccionado. Eliminar ahora?'#10#10'Una vez eliminado, no podrá recuperar los datos de este registro.', TMsgDlgType.mtWarning, [TMsgDlgBtn.mbYes, TMsgDlgBtn.mbNo], TMsgDlgBtn.mbYes, 0,
+    procedure(const AResult: TModalResult)
+    begin
+      if AResult = mrYES then
+      begin
+        if not mitramitedm.estados.Active then mitramitedm.estados.Active := True;
+        if mitramitedm.estados.Locate('id', mitramitedm.qListarEstados.FieldByName('id').AsInteger, []) then
+        begin
+          mitramitedm.estados.Delete;
+          Text1.Text := 'Los datos del registro seleccionado fueron eliminados correctamente.';
+          RectMessage.Fill.Color := $FF00CE68;
+          RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+          RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+          SpeedButton50Click(Self);
+        end;
+      end
+      else
+      begin
+        Text1.Text := 'No se ha eliminado ningún registro.';
+        RectMessage.Fill.Color := TAlphaColorRec.Red;
+        RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+        RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+        Abort;
+      end;
+    end);
+  end
+  else
+  begin
+    Text1.Text := 'No existen datos para eliminar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton55Click(Sender: TObject);
+begin
+  if mitramitedm.qListarEstados.RecordCount>0 then
+  begin
+    Overlay.Visible := True;
+    Festadoedit.Memo1.Text := mitramitedm.qListarEstados.FieldByName('estado').AsString;
+    Festadoedit.modificado := False;
+    Festadoedit.RectMessage.Opacity := 0;
+    Festadoedit.Showmodal;
+    Overlay.Visible := False;
+    if Festadoedit.ModalResult=mrOK then
+    begin
+      Text1.Text := 'Los datos modificados fueron guardados correctamente.';
+      RectMessage.Fill.Color := $FF00CE68;
+      RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+      RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+      SpeedButton50Click(Self);
+    end
+    else
+    begin
+      Text1.Text := 'No se ha modificado ningún registro.';
+      RectMessage.Fill.Color := TAlphaColorRec.Red;
+      RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+      RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+    end;
+  end
+  else
+  begin
+    Text1.Text := 'No existen datos para modificar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton56Click(Sender: TObject);
+begin
+  Edit14.Text := '';
+  Edit15.Text := '';
+  Edit16.Text := '';
+  Edit23.Text := '';
+  SpeedButton57Click(Self);
+end;
+
+procedure TFmain.SpeedButton57Click(Sender: TObject);
+begin
+  mitramitedm.qListarFuncionarios.Close;
+  mitramitedm.qListarFuncionarios.ParamByName('CI').AsString := Edit14.Text;
+  mitramitedm.qListarFuncionarios.ParamByName('app').AsString := Edit15.Text;
+  mitramitedm.qListarFuncionarios.ParamByName('apm').AsString := Edit16.Text;
+  mitramitedm.qListarFuncionarios.ParamByName('nom').AsString := Edit23.Text;
+  mitramitedm.qListarFuncionarios.Open();
+  if mitramitedm.qListarFuncionarios.RecordCount < 1 then
+  begin
+    Text1.Text := 'No existen datos para mostrar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton59Click(Sender: TObject);
+begin
+  Overlay.Visible := True;
+  Ffuncionarionew.Edit1.Text := '';
+  Ffuncionarionew.Edit2.Text := '';
+  Ffuncionarionew.Edit3.Text := '';
+  Ffuncionarionew.Memo1.Text := '';
+  Ffuncionarionew.RectMessage.Opacity := 0;
+  Ffuncionarionew.Showmodal;
+  Overlay.Visible := False;
+  if Ffuncionarionew.ModalResult=mrOK then
+  begin
+    Text1.Text := 'Los datos de registro fueron guardados correctamente.';
+    RectMessage.Fill.Color := $FF00CE68;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+    SpeedButton56Click(Self);
+    SpeedButton62Click(Self);
+    SpeedButton68Click(Self);
+  end
+  else
+  begin
+    Text1.Text := 'No se ha guardado ningún registro.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
 procedure TFmain.SpeedButton5Click(Sender: TObject);
 begin
-  TabControl1.TabIndex := 3;
+  TabControl1.TabIndex := 5;
   if SpeedButton5.IsPressed then Rectangle87.Position.X := SpeedButton5.Position.X;
 end;
 
@@ -745,6 +1416,95 @@ begin
   begin
     Rectangle89.Position.X := SpeedButton5.Position.X;
     Rectangle89.Visible := True;
+  end;
+end;
+
+procedure TFmain.SpeedButton60Click(Sender: TObject);
+begin
+  if mitramitedm.qListarfuncionarios.RecordCount>0 then
+  begin
+    TDialogService.MessageDialog('Está a punto de eliminar el registro seleccionado. Eliminar ahora?'#10#10'Una vez eliminado, no podrá recuperar los datos de este registro.', TMsgDlgType.mtWarning, [TMsgDlgBtn.mbYes, TMsgDlgBtn.mbNo], TMsgDlgBtn.mbYes, 0,
+    procedure(const AResult: TModalResult)
+    begin
+      if AResult = mrYES then
+      begin
+        if not mitramitedm.funcionarios.Active then mitramitedm.funcionarios.Active := True;
+        if mitramitedm.funcionarios.Locate('id', mitramitedm.qListarfuncionarios.FieldByName('id').AsInteger, []) then
+        begin
+          mitramitedm.funcionarios.Delete;
+          Text1.Text := 'Los datos del registro seleccionado fueron eliminados correctamente.';
+          RectMessage.Fill.Color := $FF00CE68;
+          RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+          RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+          SpeedButton56Click(Self);
+          SpeedButton62Click(Self);
+          SpeedButton68Click(Self);
+        end;
+      end
+      else
+      begin
+        Text1.Text := 'No se ha eliminado ningún registro.';
+        RectMessage.Fill.Color := TAlphaColorRec.Red;
+        RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+        RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+        Abort;
+      end;
+    end);
+  end
+  else
+  begin
+    Text1.Text := 'No existen datos para eliminar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton61Click(Sender: TObject);
+begin
+  if mitramitedm.qListarFuncionarios.RecordCount>0 then
+  begin
+    Overlay.Visible := True;
+    if mitramitedm.qListarPersonas.Locate('id', mitramitedm.qListarFuncionarios.FieldByName('persona_id').AsInteger, []) then
+      Ffuncionarioedit.Edit1.Text := mitramitedm.qListarPersonas.FieldByName('carnet').AsString
+    else
+      Ffuncionarioedit.Edit1.Text := '';
+    if mitramitedm.qListarCargos.Locate('id', mitramitedm.qListarFuncionarios.FieldByName('cargo_id').AsInteger, []) then
+      Ffuncionarioedit.Edit2.Text := mitramitedm.qListarCargos.FieldByName('codigo').AsString
+    else
+      Ffuncionarioedit.Edit2.Text := '';
+    if mitramitedm.qListarItems.Locate('id', mitramitedm.qListarFuncionarios.FieldByName('item_id').AsInteger, []) then
+      Ffuncionarioedit.Edit3.Text := mitramitedm.qListarItems.FieldByName('numero').AsString;
+    Ffuncionarioedit.Memo1.Text := mitramitedm.qListarFuncionarios.FieldByName('observaciones').AsString;
+    Ffuncionarioedit.DateEdit1.Date := mitramitedm.qListarFuncionarios.FieldByName('fechadesignacion').AsDateTime;
+    Ffuncionarioedit.modificado := False;
+    Ffuncionarioedit.RectMessage.Opacity := 0;
+    Ffuncionarioedit.Showmodal;
+    Overlay.Visible := False;
+    if Ffuncionarioedit.ModalResult=mrOK then
+    begin
+      Text1.Text := 'Los datos modificados fueron guardados correctamente.';
+      RectMessage.Fill.Color := $FF00CE68;
+      RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+      RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+      SpeedButton56Click(Self);
+      SpeedButton62Click(Self);
+      SpeedButton68Click(Self);
+    end
+    else
+    begin
+      Text1.Text := 'No se ha modificado ningún registro.';
+      RectMessage.Fill.Color := TAlphaColorRec.Red;
+      RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+      RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+    end;
+  end
+  else
+  begin
+    Text1.Text := 'No existen datos para modificar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
   end;
 end;
 
@@ -772,11 +1532,13 @@ end;
 
 procedure TFmain.SpeedButton65Click(Sender: TObject);
 begin
+  Overlay.Visible := True;
   Fcargonew.Edit1.Text := '';
   Fcargonew.Memo1.Text := '';
   Fcargonew.Edit2.Text := '';
   Fcargonew.RectMessage.Opacity := 0;
   Fcargonew.Showmodal;
+  Overlay.Visible := False;
   if Fcargonew.ModalResult=mrOK then
   begin
     Text1.Text := 'Los datos de registro fueron guardados correctamente.';
@@ -837,19 +1599,21 @@ procedure TFmain.SpeedButton67Click(Sender: TObject);
 begin
   if mitramitedm.qListarCargos.RecordCount>0 then
   begin
+    Overlay.Visible := True;
     Fcargoedit.Edit1.Text := mitramitedm.qListarCargos.FieldByName('codigo').AsString;
     Fcargoedit.Memo1.Text := mitramitedm.qListarCargos.FieldByName('cargo').AsString;
     Fcargoedit.Edit2.Text := mitramitedm.qListarCargos.FieldByName('servicio').AsString;
     Fcargoedit.modificado := False;
     Fcargoedit.RectMessage.Opacity := 0;
     Fcargoedit.Showmodal;
+    Overlay.Visible := False;
     if Fcargoedit.ModalResult=mrOK then
     begin
       Text1.Text := 'Los datos modificados fueron guardados correctamente.';
       RectMessage.Fill.Color := $FF00CE68;
       RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
       RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
-      SpeedButton68Click(Self);
+      SpeedButton62Click(Self);
     end
     else
     begin
@@ -892,7 +1656,7 @@ end;
 
 procedure TFmain.SpeedButton6Click(Sender: TObject);
 begin
-  TabControl1.TabIndex := 4;
+  TabControl1.TabIndex := 6;
   if SpeedButton6.IsPressed then Rectangle87.Position.X := SpeedButton6.Position.X;
 end;
 
@@ -907,11 +1671,13 @@ end;
 
 procedure TFmain.SpeedButton71Click(Sender: TObject);
 begin
+  Overlay.Visible := True;
   Fitemnew.Edit1.Text := '';
   Fitemnew.Memo1.Text := '';
   Fitemnew.DateEdit1.Date := now;
   Fitemnew.RectMessage.Opacity := 0;
   Fitemnew.Showmodal;
+  Overlay.Visible := False;
   if Fitemnew.ModalResult=mrOK then
   begin
     Text1.Text := 'Los datos de registro fueron guardados correctamente.';
@@ -919,6 +1685,8 @@ begin
     RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
     RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
     SpeedButton68Click(Self);
+    mitramitedm.qListarItemsAcefalos.Close;
+    mitramitedm.qListarItemsAcefalos.Open();
   end
   else
   begin
@@ -972,12 +1740,14 @@ procedure TFmain.SpeedButton73Click(Sender: TObject);
 begin
   if mitramitedm.qListarItems.RecordCount>0 then
   begin
+    Overlay.Visible := True;
     Fitemedit.Edit1.Text := mitramitedm.qListarItems.FieldByName('numero').AsString;
     Fitemedit.Memo1.Text := mitramitedm.qListarItems.FieldByName('descripcion').AsString;
     Fitemedit.DateEdit1.Date := mitramitedm.qListarItems.FieldByName('fecha_creacion').AsDateTime;
     Fitemedit.modificado := False;
     Fitemedit.RectMessage.Opacity := 0;
     Fitemedit.Showmodal;
+    Overlay.Visible := False;
     if Fitemedit.ModalResult=mrOK then
     begin
       Text1.Text := 'Los datos modificados fueron guardados correctamente.';
@@ -1005,7 +1775,7 @@ end;
 
 procedure TFmain.SpeedButton74Click(Sender: TObject);
 begin
-  TabControl1.TabIndex := 10;
+  TabControl1.TabIndex := 11;
   if SpeedButton74.IsPressed then Rectangle87.Position.X := SpeedButton74.Position.X;
 end;
 
@@ -1025,7 +1795,7 @@ end;
 
 procedure TFmain.SpeedButton7Click(Sender: TObject);
 begin
-  TabControl1.TabIndex := 5;
+  TabControl1.TabIndex := 7;
   if SpeedButton7.IsPressed then Rectangle87.Position.X := SpeedButton7.Position.X;
 end;
 
@@ -1038,9 +1808,112 @@ begin
   end;
 end;
 
+procedure TFmain.SpeedButton84Click(Sender: TObject);
+begin
+  TabControl1.TabIndex := 3;
+  if SpeedButton84.IsPressed then Rectangle87.Position.X := SpeedButton84.Position.X;
+end;
+
+procedure TFmain.SpeedButton84MouseEnter(Sender: TObject);
+begin
+  if not SpeedButton84.IsPressed then
+  begin
+    Rectangle89.Position.X := SpeedButton84.Position.X;
+    Rectangle89.Visible := True;
+  end;
+end;
+
+procedure TFmain.SpeedButton84MouseLeave(Sender: TObject);
+begin
+  Rectangle89.Visible := False;
+end;
+
+procedure TFmain.SpeedButton85Click(Sender: TObject);
+begin
+  Edit29.Text := '';
+  SpeedButton86Click(Self);
+end;
+
+procedure TFmain.SpeedButton86Click(Sender: TObject);
+begin
+  mitramitedm.qListarRequisitos.Close;
+  mitramitedm.qListarRequisitos.ParamByName('req').AsString := Edit29.Text;
+  mitramitedm.qListarRequisitos.Open();
+  if mitramitedm.qListarRequisitos.RecordCount < 1 then
+  begin
+    Text1.Text := 'No existen datos para mostrar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton88Click(Sender: TObject);
+begin
+  Overlay.Visible := True;
+  Frequisitonew.Memo1.Text := '';
+  Frequisitonew.RectMessage.Opacity := 0;
+  Frequisitonew.Showmodal;
+  Overlay.Visible := False;
+  if Frequisitonew.ModalResult=mrOK then
+  begin
+    Text1.Text := 'Los datos de registro fueron guardados correctamente.';
+    RectMessage.Fill.Color := $FF00CE68;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+    SpeedButton85Click(Self);
+  end
+  else
+  begin
+    Text1.Text := 'No se ha guardado ningún registro.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton89Click(Sender: TObject);
+begin
+  if mitramitedm.qListarRequisitos.RecordCount>0 then
+  begin
+    TDialogService.MessageDialog('Está a punto de eliminar el registro seleccionado. Eliminar ahora?'#10#10'Una vez eliminado, no podrá recuperar los datos de este registro.', TMsgDlgType.mtWarning, [TMsgDlgBtn.mbYes, TMsgDlgBtn.mbNo], TMsgDlgBtn.mbYes, 0,
+    procedure(const AResult: TModalResult)
+    begin
+      if AResult = mrYES then
+      begin
+        if not mitramitedm.requisitos.Active then mitramitedm.requisitos.Active := True;
+        if mitramitedm.requisitos.Locate('id', mitramitedm.qListarRequisitos.FieldByName('id').AsInteger, []) then
+        begin
+          mitramitedm.requisitos.Delete;
+          Text1.Text := 'Los datos del registro seleccionado fueron eliminados correctamente.';
+          RectMessage.Fill.Color := $FF00CE68;
+          RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+          RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+          SpeedButton85Click(Self);
+        end;
+      end
+      else
+      begin
+        Text1.Text := 'No se ha eliminado ningún registro.';
+        RectMessage.Fill.Color := TAlphaColorRec.Red;
+        RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+        RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+        Abort;
+      end;
+    end);
+  end
+  else
+  begin
+    Text1.Text := 'No existen datos para eliminar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
 procedure TFmain.SpeedButton8Click(Sender: TObject);
 begin
-  TabControl1.TabIndex := 6;
+  TabControl1.TabIndex := 4;
   if SpeedButton8.IsPressed then Rectangle87.Position.X := SpeedButton8.Position.X;
 end;
 
@@ -1053,9 +1926,80 @@ begin
   end;
 end;
 
+procedure TFmain.SpeedButton90Click(Sender: TObject);
+begin
+  if mitramitedm.qListarRequisitos.RecordCount>0 then
+  begin
+    Overlay.Visible := True;
+    Frequisitoedit.Memo1.Text := mitramitedm.qListarRequisitos.FieldByName('requisito').AsString;
+    Frequisitoedit.modificado := False;
+    Frequisitoedit.RectMessage.Opacity := 0;
+    Frequisitoedit.Showmodal;
+    Overlay.Visible := False;
+    if Frequisitoedit.ModalResult=mrOK then
+    begin
+      Text1.Text := 'Los datos modificados fueron guardados correctamente.';
+      RectMessage.Fill.Color := $FF00CE68;
+      RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+      RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+      SpeedButton85Click(Self);
+    end
+    else
+    begin
+      Text1.Text := 'No se ha modificado ningún registro.';
+      RectMessage.Fill.Color := TAlphaColorRec.Red;
+      RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+      RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+    end;
+  end
+  else
+  begin
+    Text1.Text := 'No existen datos para modificar.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
+procedure TFmain.SpeedButton91Click(Sender: TObject);
+begin
+  if mitramitedm.qListarTramites.RecordCount>0 then
+  begin
+    Overlay.Visible := True;
+    Frequisitoview.Memo1.Text := mitramitedm.qListarTramites.FieldByName('tramite').AsString;
+    Frequisitoview.Edit1.Text := mitramitedm.qListarTramites.FieldByName('tiempo').AsString + ' ' + mitramitedm.qListarTramites.FieldByName('unid_tiempo').AsString;
+    Frequisitoview.RectMessage.Opacity := 0;
+    Frequisitoview.modificado := False;
+    Frequisitoview.Showmodal;
+    Overlay.Visible := False;
+    if Frequisitoview.ModalResult=mrOK then
+    begin
+      Text1.Text := 'Los datos modificados fueron guardados correctamente.';
+      RectMessage.Fill.Color := $FF00CE68;
+      RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+      RectMessage.AnimateFloatDelay('Opacity', 0, 2, 5, TAnimationType.InOut, TInterpolationType.Linear);
+      SpeedButton18Click(Self);
+    end
+    else
+    begin
+      Text1.Text := 'No se ha modificado ningún registro.';
+      RectMessage.Fill.Color := TAlphaColorRec.Red;
+      RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+      RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+    end;
+  end
+  else
+  begin
+    Text1.Text := 'No existen datos de trámite para asignar requisitos.';
+    RectMessage.Fill.Color := TAlphaColorRec.Red;
+    RectMessage.AnimateFloat('Opacity', 1.0, 0.5, TAnimationType.In, TInterpolationType.Linear);
+    RectMessage.AnimateFloatDelay('Opacity', 0, 1, 4, TAnimationType.InOut, TInterpolationType.Linear);
+  end;
+end;
+
 procedure TFmain.SpeedButton9Click(Sender: TObject);
 begin
-  TabControl1.TabIndex := 7;
+  TabControl1.TabIndex := 8;
   if SpeedButton9.IsPressed then Rectangle87.Position.X := SpeedButton9.Position.X;
 end;
 

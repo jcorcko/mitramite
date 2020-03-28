@@ -1,0 +1,94 @@
+object Fpruebas: TFpruebas
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 551
+  ClientWidth = 729
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Grid1: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 32.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 625.000000000000000000
+    Size.Height = 209.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    RowCount = 22
+    Viewport.Width = 605.000000000000000000
+    Viewport.Height = 168.000000000000000000
+  end
+  object Grid2: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 32.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 625.000000000000000000
+    Size.Height = 209.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    RowCount = 22
+    Viewport.Width = 605.000000000000000000
+    Viewport.Height = 184.000000000000000000
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = mitramitedm.qListarTramites
+    ScopeMappings = <>
+    Left = 328
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <
+        item
+          MemberName = 'id'
+        end
+        item
+          MemberName = 'codigo'
+        end
+        item
+          MemberName = 'tramite'
+        end
+        item
+          MemberName = 'tiempo'
+        end
+        item
+          MemberName = 'unidad_tiempo'
+        end
+        item
+          MemberName = 'oficina_id'
+        end
+        item
+          MemberName = 'oficina_codigo'
+        end
+        item
+          MemberName = 'oficina'
+        end
+        item
+          MemberName = 'unid_tiempo'
+        end>
+    end
+    object LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      GridControl = Grid2
+      Columns = <>
+    end
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = mitramitedm.qVerRequisitos
+    ScopeMappings = <>
+    Left = 352
+    Top = 264
+  end
+end
